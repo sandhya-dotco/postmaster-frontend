@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Users, FileText, Edit, Send, BarChart2, Settings, Mail, Plus } from 'lucide-react';
 import { NewCampaignModal } from '../ui/Modals';
 import styles from './AppLayout.module.css';
@@ -17,7 +17,6 @@ const navItems = [
 export function AppLayout() {
   const [isCampaignModalOpen, setCampaignModalOpen] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
   const currentPath = location.pathname;
 
   // Simple breadcrumb logic based on path

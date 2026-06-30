@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Plus } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+
 import { NewCampaignModal } from '../components/ui/Modals';
 import styles from './Campaigns.module.css';
 
@@ -16,7 +16,6 @@ const campaigns = [
 
 export function Campaigns() {
   const [isCampaignModalOpen, setCampaignModalOpen] = useState(false);
-  const navigate = useNavigate();
 
   const getStatusClass = (status: string) => {
     if (status === 'SENT') return styles.statusSent;

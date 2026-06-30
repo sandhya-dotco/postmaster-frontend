@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FileText, Plus, ExternalLink } from 'lucide-react';
+import { Plus, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { CreateTemplateModal } from '../components/ui/Modals';
 import styles from './Templates.module.css';
