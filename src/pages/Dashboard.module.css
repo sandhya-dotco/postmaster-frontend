@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.statHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.statTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.statIcon {
+  color: var(--text-muted);
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.statChange {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-secondary);
+}
+
+.posIcon {
+  color: var(--primary-hover);
+}
+
+.neutralText {
+  color: var(--text-muted);
+}
+
+.recentSection {
+  margin-top: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.recentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.recentItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.recentItem:first-child {
+  padding-top: 0;
+}
+
+.recentName {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.recentMeta {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.recentStatus {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--badge-green-text);
+  background-color: var(--badge-green-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+.statusScheduled {
+  background-color: var(--badge-yellow-bg);
+  color: var(--badge-yellow-text);
+}
